@@ -121,7 +121,6 @@ class _registerEmployeeState extends State<registerEmployee> {
 
 
 class MyAlertDialog extends StatelessWidget {
-
   final String? title;
   final String? content;
   final List<Widget>actions;
@@ -139,6 +138,11 @@ class MyAlertDialog extends StatelessWidget {
       title: Text(
         this.title!,
         style: Theme.of(context).textTheme.titleLarge,
+      ),
+      actions: this.actions,
+      content: Text(
+        this.content!,
+        style: Theme.of(context).textTheme.bodyLarge,
       ),
 
     );
